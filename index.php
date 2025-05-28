@@ -1,4 +1,4 @@
 <?php
 
-$name = "Usman";
-echo "Hello " . $name . "!\n";
+$isStudent = 1;
+var_dump($isStudent, $isStudent == true, $isStudent === true);
