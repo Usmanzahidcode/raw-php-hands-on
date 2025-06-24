@@ -1,8 +1,10 @@
 <?php
 
-for ($i = 10; $i >= 1; $i--) {
+$i = 10;
+while ($i >= 1) {
     echo "$i...\n";
     sleep(1);
+    $i--;
 }
 
 echo "Launching 🚀 \n";
