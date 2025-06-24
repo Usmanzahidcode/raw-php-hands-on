@@ -1,9 +1,8 @@
 <?php
 
-for ($i = 0; $i <= 10; $i++) {
-    if ($i % 3===0) {
-        echo "Fizz!\n";
-    } else {
-        echo "$i\n";
-    }
+for ($i = 10; $i >= 1; $i--) {
+    echo "$i...\n";
+    sleep(1);
 }
+
+echo "Launching 🚀 \n";
