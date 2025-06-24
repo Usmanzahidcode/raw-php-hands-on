@@ -1,16 +1,14 @@
 <?php
 
-do {
-    echo "Rolling back here...\n";
-    sleep(1);
+$myBasket = [
+    'apple 🍎' => '1kg',
+    'pear 🍐' => '2kg',
+    'orange 🍊' => '3kg',
+    'potato 🥔' => '4kg',
+    'tomato 🍅' => '5kg',
+];
 
-    $currentRoll = rand(1, 6);
-    if ($currentRoll===6) {
-        echo "You got a sixer 🥳 \n";
-    } else {
-        echo "You got a $currentRoll! \n";
-    }
-
-    echo "Want to roll again? (1/0)\n";
-    $redoChoice = trim(fgets(STDIN));
-} while (filter_var($redoChoice, FILTER_VALIDATE_BOOLEAN));
+echo "We will be getting: \n\n";
+foreach ($myBasket as $key => $value) {
+    echo "$value of $key\n";
+}
