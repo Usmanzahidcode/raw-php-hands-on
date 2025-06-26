@@ -1,6 +1,4 @@
 <?php
 
-include_once 'config.php';
-include_once 'config.php';
+require_once 'helpers.php';
 
-echo "Database connection successful!\n";
